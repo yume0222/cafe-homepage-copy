@@ -1,0 +1,33 @@
+.bg {
+  padding: 64px 0;
+  background-color: var(--color-bg-secondary);
+}
+.list {
+  display: grid;
+  gap: 8px 9px;
+  grid-template-columns: repeat(3, minmax(auto, 260px));
+  margin-top: 40px;
+  justify-content: center;
+}
+.button {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .bg {
+    padding: 80px 0;
+  }
+  .list {
+    grid-template-columns: repeat(6, minmax(auto, 260px));
+    margin: 48px auto 0;
+  }
+  .button {
+    margin-top: 48px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .list {
+    gap: 32px;
+  }
+}

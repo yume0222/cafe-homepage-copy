@@ -1,0 +1,52 @@
+.button {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  max-width: 220px;
+  height: 50px;
+  padding: 8px 16px;
+  background-color: var(--color-bg-black);
+  color: var(--color-font-white);
+  font-family: var(--font-family-english);
+  text-transform: uppercase;
+}
+.button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 24px;
+  height: 1px;
+  background-color: var(--color-font-white);
+  transform: translateY(-50%);
+  transition: width .3s;
+}
+.buttonWhite {
+  background-color: var(--color-bg-white);
+  color: var(--color-font-base);
+}
+.buttonWhite::after {
+  background-color: var(--color-bg-black);
+}
+.buttonCenter {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .button {
+    max-width: 240px;
+    height: 60px;
+    font-size: 18px;
+  }
+  .button::after {
+    width: 28px;
+  }
+}
+
+@media (any-hover: hover) {
+  .button:hover::after {
+    width: 34px;
+  }
+}

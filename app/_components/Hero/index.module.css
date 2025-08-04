@@ -1,0 +1,48 @@
+.bgImg {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.bgImgConsept {
+  background-image: url("/bg-consept-kv-sp.jpg");
+}
+.bgImgMenu {
+  background-image: url("/bg-menu-kv-sp.jpg");
+}
+.bgImgShoplist {
+  background-image: url("/bg-shoplist-kv-sp.jpg");
+}
+.bgImgBlog {
+  background-image: url("/bg-blog-kv-sp.jpg");
+}
+.bgImgError {
+  background-image: url("/bg-error-kv-sp.jpg");
+}
+.containerLarge {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .bgImg {
+    height: 460px;
+  }
+  .bgImgConsept {
+    background-image: url("/bg-consept-kv.jpg");
+  }
+  .bgImgMenu {
+    background-image: url("/bg-menu-kv.jpg");
+  }
+  .bgImgShoplist {
+    background-image: url("/bg-shoplist-kv.jpg");
+  }
+  .bgImgBlog {
+    background-image: url("/bg-blog-kv.jpg");
+  }
+  .bgImgError {
+    background-image: url("/bg-error-kv.jpg");
+  }
+}

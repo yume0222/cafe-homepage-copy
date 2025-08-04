@@ -1,0 +1,15 @@
+.text {
+  text-align: center;
+}
+.button {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .text span {
+    display: block;
+  }
+  .button {
+    margin-top: 48px;
+  }
+}
