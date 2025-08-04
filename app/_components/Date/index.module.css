@@ -1,0 +1,14 @@
+.date {
+  display: block;
+  color: var(--color-font-primary);
+  font-size: 12px;
+  font-family: var(--font-family-english);
+  letter-spacing: .08em;
+  line-height: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .date {
+    font-size: 14px;
+  }
+}

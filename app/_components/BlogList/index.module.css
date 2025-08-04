@@ -1,0 +1,40 @@
+.list {
+  display: grid;
+  gap: 40px 30px;
+  grid-template-columns: repeat(1, 1fr);
+}
+.image {
+  display: block;
+}
+.image img {
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.date {
+  margin-top: 16px;
+  line-height: 1;
+}
+.title {
+  margin-top: 8px;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+@media screen and (min-width: 500px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px 30px;
+  }
+  .date {
+    margin-top: 20px;
+  }
+  .title {
+    font-size: 22px;
+  }
+}

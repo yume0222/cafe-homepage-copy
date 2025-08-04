@@ -1,0 +1,23 @@
+.date {
+  margin-top: 16px;
+}
+.title {
+  margin-top: 4px;
+  font-size: 22px;
+  line-height: 1.55;
+}
+.content {
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .date {
+    margin-top: 24px;
+  }
+  .title {
+    font-size: 26px;
+  }
+  .content {
+    margin-top: 48px;
+  }
+}

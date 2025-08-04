@@ -21,16 +21,16 @@ export default function Header() {
       <nav className={styles.nav}>
         <ul className={styles.list}>
           <li className={styles.item}>
-            <Link href="">concept</Link>
+            <Link href="/concept">concept</Link>
           </li>
           <li className={styles.item}>
-            <Link href="">menu</Link>
+            <Link href="/menu">menu</Link>
           </li>
           <li className={styles.item}>
-            <Link href="">shoplist</Link>
+            <Link href="/shoplist">shoplist</Link>
           </li>
           <li className={styles.item}>
-            <Link href="">blog&news</Link>
+            <Link href="/blog">blog&news</Link>
           </li>
         </ul>
       </nav>
