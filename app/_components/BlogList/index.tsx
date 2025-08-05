@@ -23,7 +23,7 @@ export default function BlogList({ blog }: Props) {
             <div className={styles.date}>
               <Date date={blog.publishedAt ?? blog.createdAt} />
             </div>
-            <h2 className={styles.title}>{blog.title}</h2>
+            <h3 className={styles.title}>{blog.title}</h3>
           </Link>
         </li>
       ))}

@@ -1,0 +1,25 @@
+.list {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 8px;
+}
+.item {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--color-bg-white);
+  border: 1px solid var(--color-border-black);
+}
+.current {
+  background-color: var(--color-bg-black);
+  color: var(--color-font-white);
+}
+
+@media screen and (min-width: 768px) {
+  .item {
+    width: 40px;
+    height: 40px;
+  }
+}

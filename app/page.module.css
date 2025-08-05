@@ -1,0 +1,112 @@
+.bg {
+  background: url("/bg-top-kv-sp.jpg") center / cover no-repeat;
+  aspect-ratio: 360/500;
+}
+.mt {
+  margin-top: 40px;
+}
+/* コンセプト */
+.conseptText {
+  font-size: 16px;
+  text-align: center;
+}
+.conseptText02 {
+  margin-top: 24px;
+  text-align: center;
+}
+/* メニュー */
+.menuBg {
+  background: url("/bg-top-menu-sp.jpg") center / cover no-repeat;
+}
+.menuTitle {
+  color: var(--color-font-white);
+  font-size: 18px;
+  font-family: var(--font-family-english);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.menuBody {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+}
+.menuList {
+  margin-top: 16px;
+}
+.menuItem {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--color-border-white);
+  color: var(--color-font-white);
+}
+.menuItem:not(:first-child) {
+  padding-top: 16px;
+}
+.menuItem span {
+  line-height: 1;
+}
+/* ショップリスト */
+.shoplistText {
+  text-align: center;
+}
+.shoplistList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 14px;
+  max-width: 738px;
+  margin: 0 auto;
+}
+.shoplistItem {
+  display: grid;
+  place-items: center;
+  height: 45px;
+  border-radius: 100vh;
+  background-color: var(--color-bg-secondary);
+}
+
+@media screen and (min-width: 500px) {
+  .bg {
+    height: 500px;
+    background-image: url("/bg-top-kv.jpg");
+    aspect-ratio: inherit;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bg {
+    height: 685px;
+  }
+  .mt {
+    margin-top: 48px;
+  }
+  /* コンセプト */
+  .conseptText {
+    font-size: 20px;
+  }
+  .conseptText02 {
+    margin-top: 32px;
+  }
+  .conseptText02 span {
+    display: block;
+  }
+  /* メニュー */
+  .menuTitle {
+    font-size: 20px;
+  }
+  .menuBody {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 62px;
+  }
+  /* ショップリスト */
+  .shoplistText span {
+    display: block;
+  }
+  .shoplistList {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .shoplistItem {
+    height: 55px;
+  }
+}

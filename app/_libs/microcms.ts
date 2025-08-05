@@ -13,6 +13,25 @@ export type Blog = {
   thumbnail: MicroCMSImage;
 } & MicroCMSListContent;
 
+// メニューの型定義
+export type Menu = {
+  name: string;
+  price: string;
+  description: string;
+  thumbnail: MicroCMSImage;
+} & MicroCMSListContent;
+
+// ショップリストの型定義
+export type Shoplist = {
+  name: string;
+  adress: string;
+  tel: string;
+  hours: string;
+  seats: string;
+  smoking: string;
+  thumbnail: MicroCMSImage;
+} & MicroCMSListContent;
+
 // .env.lacalファイルに設定した環境変数を参照
 if (!process.env.MICROCMS_SERVICE_DOMAIN) {
   throw new Error('MICROCMS_SERVICE_DOMAIN is required');
@@ -54,4 +73,30 @@ export const getBlogDetail = async (
     },
   });
   return detailData;
+};
+
+// メニュー一覧を取得する関数
+export const getMenuList = async (queries?: MicroCMSQueries) => {
+  const listData = await client.getList<Menu>({
+    endpoint: 'menu',
+    queries,
+  });
+  return listData;
+};
+
+// ショップリスト一覧を取得する関数
+export const getShoplist = async (queries?: MicroCMSQueries) => {
+  const listData = await client.getList<Shoplist>({
+    endpoint: 'shoplist',
+    queries,
+  });
+  return listData;
+};
+
+// ブログのコンテンツを全て取得する関数
+export const getAllBlogList = async () => {
+  const listData = await client.getAllContents<Blog>({
+    endpoint: 'blog',
+  });
+  return listData;
 };

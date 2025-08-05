@@ -58,11 +58,7 @@ export default function Instagram() {
         </li>
       </ul>
       <div className={styles.button}>
-        <ButtonLink
-          href={"https://www.instagram.com/?hl=ja"}
-          target={"_blank"}
-          rel={"noopener noreferrer"}
-        >
+        <ButtonLink href={"https://www.instagram.com/?hl=ja"}>
           instagram
         </ButtonLink>
       </div>

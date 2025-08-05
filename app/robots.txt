@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cafe-homepage-copy.vercel.app/sitemap.xml

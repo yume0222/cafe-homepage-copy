@@ -1,0 +1,70 @@
+.list {
+  display: grid;
+  gap: 40px 16px;
+  grid-template-columns: repeat(1, 1fr);
+}
+.info {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.name {
+  font-size: 16px;
+  line-height: 1.55;
+}
+.adress {
+  font-size: 12px;
+  line-height: 1.55;
+}
+.tel {
+  font-size: 18px;
+  font-family: var(--font-family-english);
+  line-height: 1.55;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.detailItem {
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+@media screen and (min-width: 500px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    gap: 48px 32px;
+  }
+  .name {
+    font-size: 20px;
+  }
+  .adress {
+    font-size: 14px;
+  }
+  .tel {
+    font-size: 22px;
+  }
+  .detailItem {
+    font-size: 14px;
+  }
+  
+}
+
+@media screen and (min-width: 1200px) {
+  .item {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-items: center;
+    gap: 24px;
+  }
+  .info {
+    margin-top: 0;
+  }
+}

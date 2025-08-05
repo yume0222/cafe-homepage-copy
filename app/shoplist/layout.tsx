@@ -4,7 +4,7 @@ import Sheet from "../_components/Sheet";
 import SheetStyles from "../_components/Sheet/index.module.css";
 
 export const metadata = {
-  title: 'コンセプト',
+  title: 'ショップリスト',
 };
 
 type Props = {
@@ -14,8 +14,8 @@ type Props = {
 export default function RootLayout({ children }: Props) {
   return (
     <>
-      <Hero className={HeroStyles.bgImgConsept}>consept</Hero>
-      <Sheet className={SheetStyles.container}>{children}</Sheet>
+      <Hero className={HeroStyles.bgImgShoplist}>shoplist</Hero>
+      <Sheet className={SheetStyles.containerLarge}>{children}</Sheet>
     </>
   );
 }

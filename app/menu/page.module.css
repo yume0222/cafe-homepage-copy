@@ -1,0 +1,60 @@
+.text {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.75;
+}
+.text02 {
+  text-align: center;
+  margin-top: 24px;
+}
+.list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+.info {
+  margin-top: 16px;
+}
+.name {
+  font-size: 16px;
+  line-height: 1;
+}
+.price {
+  margin-top: 12px;
+  line-height: 1;
+}
+.desc {
+  margin-top: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    font-size: 20px;
+  }
+  .text02 span {
+    display: block;
+  }
+  .list {
+    gap: 48px;
+    margin-top: 48px;
+  }
+  .item {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    align-items: center;
+    gap: 48px;
+  }
+  .info {
+    margin-top: 0;
+  }
+  .name {
+    font-size: 20px;
+  }
+  .price {
+    margin-top: 16px;
+  }
+  .desc {
+    margin-top: 24px;
+  }
+}
