@@ -99,13 +99,15 @@ export default async function Home() {
             <span>首都圏を中心に6店舗展開しています。</span>
             <span>お近くの店舗でお待ちしています。</span>
           </p>
-          <ul className={`${styles.shoplistList} ${styles.mt}`}>
-            {shoplist.map((shoplist) => (
-              <li key={shoplist.id} className={styles.shoplistItem}>
-                {shoplist.name}店
-              </li>
-            ))}
-          </ul>
+          <div className={styles.mt}>
+            <ul className={styles.shoplistList}>
+              {shoplist.map((shoplist) => (
+                <li key={shoplist.id} className={styles.shoplistItem}>
+                  {shoplist.name}店
+                </li>
+              ))}
+            </ul>
+          </div>
           <div className={styles.mt}>
             <ButtonLink href="/shoplist">MORE</ButtonLink>
           </div>
