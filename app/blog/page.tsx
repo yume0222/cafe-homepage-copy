@@ -4,6 +4,7 @@ import BlogList from "../_components/BlogList";
 import { getBlogList } from "../_libs/microcms";
 import { BLOG_LIST_LIMIT } from "../_constants";
 import Pagination from "../_components/Pagination";
+import SearchField from "../_components/SearchField";
 
 export default async function Page() {
   const { contents: blog, totalCount } = await getBlogList({
@@ -12,6 +13,7 @@ export default async function Page() {
 
   return (
     <Sheet className={SheetStyles.container}>
+      <SearchField />
       <BlogList blog={blog} />
       <Pagination totalCount={totalCount} />
     </Sheet>
