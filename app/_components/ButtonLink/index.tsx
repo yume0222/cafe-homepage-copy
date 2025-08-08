@@ -5,26 +5,25 @@ type Props = {
   href: string;
   className?: string;
   children: React.ReactNode;
+  target?: string;
+  rel?: string;
 };
 
-export default function ButtonLink({ children, href, className }: Props) {
-  const isExternal = href.startsWith("http") || href.startsWith("https");
-  if (isExternal) {
-    return (
-      <a
-        href={href}
-        className={`${styles.button} ${styles.buttonCenter} ${className || ""}`}
-      >
-        {children}
-      </a>
-    );
-  }
+export default function ButtonLink({
+  children,
+  href,
+  className,
+  target,
+  rel,
+}: Props) {
   return (
-    <Link
+    <a
       href={href}
       className={`${styles.button} ${styles.buttonCenter} ${className || ""}`}
+      target={target}
+      rel={rel}
     >
       {children}
-    </Link>
+    </a>
   );
 }
