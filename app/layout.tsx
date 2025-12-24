@@ -5,7 +5,7 @@ import Header from "./_components/Header";
 import Instagram from "./_components/Instagram";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://cafe-homepage-copy.vercel.app/'),
+  metadataBase: new URL('https://cafe-homepage-copy.vercel.app'),
   title: {
     template: '%s | カフェのホームページ',
     default: 'カフェのホームページ',
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     images: ['/ogp.png'],
   },
   alternates: {
-    canonical: 'https://cafe-homepage-copy.vercel.app/',
+    canonical: 'https://cafe-homepage-copy.vercel.app',
   },
 };
 
